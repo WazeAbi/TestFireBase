@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDda9DQxklVu1bORDROl_jUGnAcx41I9oQ",
+          authDomain: "test-authentification-55884.firebaseapp.com",
+          projectId: "test-authentification-55884",
+          storageBucket: "test-authentification-55884.appspot.com",
+          messagingSenderId: "49731923448",
+          appId: "1:49731923448:web:f8e3561ca77f4e34d93a0d"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        console.log(app);
+      </script>
+</head>
+<body>
+    <form>
+        <label for="user">Entrez votre user </label>   
+        <br>
+        <input type="text" name="user" id="user">
+        <br>
+        <label for="mdp">Entrez votre mdp </label>   
+        <br>
+        <input type="text" name="mdp" id="mdp">
+        <br>
+      <input type="submit"  value="submit" name="submit" id="submit">
+    </form>
+    
+</body>
+</html>
